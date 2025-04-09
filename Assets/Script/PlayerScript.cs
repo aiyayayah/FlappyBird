@@ -16,6 +16,19 @@ public class PlayerScript : MonoBehaviour
         {
             rb.velocity = new Vector2(0, jumpHeight); // 0 speed for x
         }
+
+        if(rb.velocity.y > 0) //bird is moving up
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 30); //make the bird face up 30 degree
+            //Quaternion.Euler is to rotate the obj
+
+            //if `transform` did not have anything .infront of it, it is referring to the obj itself
+        }
+        else if ((rb.velocity.y < 0)) //bird is moving down 
+        {
+            transform.rotation = Quaternion.Euler(0, 0, -30); //make the bird face down 30 degree
+        }
+  
     }
 
     private void OnCollisionEnter2D(Collision2D collision) //built in function -- collide
