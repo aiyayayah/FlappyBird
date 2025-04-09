@@ -607,7 +607,7 @@ MonoBehaviour:
   - {fileID: 6705790044915500947, guid: dd563a3d63aeace4fa5883d944364ab1, type: 3}
   spawnPoint: {fileID: 889158102}
   doCreate: 1
-  doCreateTime: 2
+  nextPillarCreationTime: 2
 --- !u!4 &889158102
 Transform:
   m_ObjectHideFlags: 0
@@ -1172,7 +1172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29dc86280511ad649ab28d8dc0233aa8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  jumpHeight: 4
   rb: {fileID: 1503848754}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
