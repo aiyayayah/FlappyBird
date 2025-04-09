@@ -16,4 +16,13 @@ public class PlayerScript : MonoBehaviour
             rb.velocity = new Vector2(0, jumpHeight); // 0 speed for x
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision) //built in function
+    {
+        if (collision.gameObject.tag == "Pillar")
+        {
+            Debug.Log("Game Over");
+            Time.timeScale = 0; //stop the game
+        }
+    }
 }
