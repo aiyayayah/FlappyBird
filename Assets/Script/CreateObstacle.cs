@@ -21,7 +21,7 @@ public class CreateObstacle : MonoBehaviour
             Instantiate(obstacles[randomIndex], spawnPoint.position, spawnPoint.rotation);
 
             Invoke("ResetDoCreate", nextPillarCreationTime); //delay time after nextPillarCreated
-            //doCreate = false; //prevent immediate respawn
+            doCreate = false; //prevent immediate respawn
         }
     }
 
