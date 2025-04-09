@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Pillar
+  - ADDScore
   layers:
   - Default
   - TransparentFX
