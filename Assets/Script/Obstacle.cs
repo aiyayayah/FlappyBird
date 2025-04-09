@@ -3,13 +3,12 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     public float PillarMovingSpeed = 5f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        
+        Destroy(gameObject, 30.0f);  //the pillar disappear after 30s
     }
 
-    // Update is called once per frame
     void Update()
     {
         //pillar move to left

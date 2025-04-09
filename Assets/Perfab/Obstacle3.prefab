@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 304844877124708693}
   - component: {fileID: 2153827677925378751}
   m_Layer: 0
-  m_Name: obstacle3
+  m_Name: Obstacle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fcd14fa7597e754ab304cb753168d67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  PillarMovingSpeed: 2
 --- !u!1 &7764676680395082706
 GameObject:
   m_ObjectHideFlags: 0

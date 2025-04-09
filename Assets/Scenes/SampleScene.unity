@@ -606,6 +606,8 @@ MonoBehaviour:
   - {fileID: 3550455896689813440, guid: 3af1eae2bbe6bcb409ca1ae0b6d66508, type: 3}
   - {fileID: 6705790044915500947, guid: dd563a3d63aeace4fa5883d944364ab1, type: 3}
   spawnPoint: {fileID: 889158102}
+  doCreate: 1
+  doCreateTime: 2
 --- !u!4 &889158102
 Transform:
   m_ObjectHideFlags: 0
