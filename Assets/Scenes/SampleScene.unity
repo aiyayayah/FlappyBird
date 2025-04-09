@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 11891752}
   m_Layer: 0
   m_Name: Sky limit
-  m_TagString: Untagged
+  m_TagString: Pillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 785959323}
   m_Layer: 0
   m_Name: floor (1)
-  m_TagString: Untagged
+  m_TagString: Pillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -602,9 +602,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obstacles:
   - {fileID: 7583006288760592029, guid: 31c3bb1c01f6ae44ca8e1d96de2eb973, type: 3}
-  - {fileID: 7639637524459813461, guid: 92c036cc8214f704c8108df45946db66, type: 3}
-  - {fileID: 3550455896689813440, guid: 3af1eae2bbe6bcb409ca1ae0b6d66508, type: 3}
-  - {fileID: 6705790044915500947, guid: dd563a3d63aeace4fa5883d944364ab1, type: 3}
+  - {fileID: 7583006288760592029, guid: 43a085cbe6aecb94d97bb76e0513d943, type: 3}
+  - {fileID: 6303552829564232206, guid: 3af1eae2bbe6bcb409ca1ae0b6d66508, type: 3}
+  - {fileID: 7583006288760592029, guid: 0317bb4375d941b48b79625f954b64b0, type: 3}
+  - {fileID: 7583006288760592029, guid: 8e9d290c485afee449bb691d0e0bdc67, type: 3}
   spawnPoint: {fileID: 889158102}
   doCreate: 1
   nextPillarCreationTime: 2
@@ -728,7 +729,7 @@ GameObject:
   - component: {fileID: 1055054361}
   m_Layer: 0
   m_Name: floor (1)
-  m_TagString: Untagged
+  m_TagString: Pillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -862,7 +863,7 @@ GameObject:
   - component: {fileID: 1064256192}
   m_Layer: 0
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Pillar
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1091,7 +1092,7 @@ Transform:
   m_GameObject: {fileID: 1503848749}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03, y: 0.94, z: 0.11959794}
+  m_LocalPosition: {x: 0, y: 1.58, z: 0.11959794}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1131,8 +1132,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.17
+  m_Offset: {x: 0.0017833114, y: 0.003923252}
+  m_Radius: 0.12078036
 --- !u!50 &1503848754
 Rigidbody2D:
   serializedVersion: 4
