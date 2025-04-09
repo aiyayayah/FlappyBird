@@ -314,4 +314,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fcd14fa7597e754ab304cb753168d67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PillarMovingSpeed: 1
+  PillarMovingSpeed: 2
