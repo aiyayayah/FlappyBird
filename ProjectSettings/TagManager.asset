@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pillar
   - ADDScore
+  - Floor
   layers:
   - Default
   - TransparentFX
