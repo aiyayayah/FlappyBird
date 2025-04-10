@@ -16,9 +16,11 @@ public class Ground : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Floor")
+        if (collision.gameObject.tag == "Floor" && floor != null)
         {
             Instantiate(floor, spawnPoint.position, spawnPoint.rotation);
+            Debug.Log("New floor spawned at " + spawnPoint.position);
+
         }
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5999511157993281263}
   - component: {fileID: 3919647800906027663}
   - component: {fileID: 7752689716813903790}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pillar down
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2732689672699043531}
   - component: {fileID: 4262480369717215269}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ADDScore
   m_TagString: ADDScore
   m_Icon: {fileID: 0}
@@ -222,7 +222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8929639144161995643}
   - component: {fileID: -7440001486349985797}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Obstacle2
   m_TagString: Pillar
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 6743239491996823987}
   - component: {fileID: 2879798783616897017}
   - component: {fileID: 4209956786277058946}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: pillar up
   m_TagString: Pillar
   m_Icon: {fileID: 0}
