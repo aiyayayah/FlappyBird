@@ -42,6 +42,11 @@ public class PlayerScript : MonoBehaviour
             targetRotation = Quaternion.Euler(0, 0, 0);
         }
         transform.rotation = Quaternion.RotateTowards(rotation, targetRotation, 600 * Time.deltaTime);
+
+        if (gm.GameStart == true)
+        {
+            FreeBird();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision) //built in function -- collide
@@ -69,5 +74,10 @@ public class PlayerScript : MonoBehaviour
     private void GameEnd()
     {
         gm.PlayerDead = true;
+    }
+
+    private void FreeBird()
+    {
+        rb.constraints = RigidbodyConstraints2D.None; 
     }
 }

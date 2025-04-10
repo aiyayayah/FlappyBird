@@ -6,6 +6,7 @@ public class CreateObstacle : MonoBehaviour
     public Transform spawnPoint;
     public bool doCreate = true;
     public float nextPillarCreationTime = 2.0f;
+    public GameManager gm;
     void Start()
     {
         
@@ -14,15 +15,19 @@ public class CreateObstacle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(doCreate)
+        if(gm.GameStart == true)
         {
-            int randomIndex = Random.Range(0, obstacles.Length);
+            if (doCreate)
+            {
+                int randomIndex = Random.Range(0, obstacles.Length);
 
-            Instantiate(obstacles[randomIndex], spawnPoint.position, spawnPoint.rotation);
+                Instantiate(obstacles[randomIndex], spawnPoint.position, spawnPoint.rotation);
 
-            Invoke("ResetDoCreate", nextPillarCreationTime); //delay time after nextPillarCreated
-            doCreate = false; //prevent immediate respawn
+                Invoke("ResetDoCreate", nextPillarCreationTime); //delay time after nextPillarCreated
+                doCreate = false; //prevent immediate respawn
+            }
         }
+        
     }
 
     public void ResetDoCreate()
