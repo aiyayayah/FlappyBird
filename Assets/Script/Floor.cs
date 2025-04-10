@@ -10,10 +10,9 @@ public class Floor : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         Destroy(gameObject, 30.0f);
 
-        // Ensure it's not affected by gravity
+      
         rb.gravityScale = 0;
 
-        // Freeze the Y position in Rigidbody2D constraints (should also be done in Inspector)
         rb.constraints = RigidbodyConstraints2D.FreezePositionY;
     }
 
