@@ -18,7 +18,7 @@ public class CreateObstacle : MonoBehaviour
         {
             int randomIndex = Random.Range(0, obstacles.Length);
 
-            Instantiate(obstacles[randomIndex], spawnPoint.position, spawnPoint.rotation);
+            Instantiate(obstacles[randomIndex], spawnPoint.position, spawnPoint.rotation);  //create new pillar
 
             Invoke("ResetDoCreate", nextPillarCreationTime); //delay time after nextPillarCreated
             doCreate = false; //prevent immediate respawn
