@@ -6,6 +6,8 @@ public class PlayerScript : MonoBehaviour
     public float jumpHeight = 0f;
     public Rigidbody2D rb;
     public int score = 0;
+
+    public GameManager gm;
    void Start()
     {
         
@@ -15,7 +17,10 @@ public class PlayerScript : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) // 0 means mouse's left click
         {
-            rb.velocity = new Vector2(0, jumpHeight); // 0 speed for x
+            if(gm.PlayerDead == false)
+            {
+                rb.velocity = new Vector2(0, jumpHeight); // 0 speed for x
+            }
         }
 
         Quaternion rotation = transform.rotation;
@@ -43,13 +48,11 @@ public class PlayerScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "Pillar")
         {
-            Debug.Log("Game Over");
-            Time.timeScale = 0; //stop the game
+            GameEnd();
         }
         else if (collision.gameObject.tag == "Floor")
         {
-            Debug.Log("Game Over");
-            Time.timeScale = 0; //stop the game
+            GameEnd();
         }
 
     }
@@ -61,5 +64,10 @@ public class PlayerScript : MonoBehaviour
             score++;
             Debug.Log(score);
         }
+    }
+
+    private void GameEnd()
+    {
+        gm.PlayerDead = true;
     }
 }
