@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -17,18 +18,25 @@ public class PlayerScript : MonoBehaviour
             rb.velocity = new Vector2(0, jumpHeight); // 0 speed for x
         }
 
-        if(rb.velocity.y > 0) //bird is moving up
-        {
-            transform.rotation = Quaternion.Euler(0, 0, 30); //make the bird face up 30 degree
-            //Quaternion.Euler is to rotate the obj
+        Quaternion rotation = transform.rotation;
 
-            //if `transform` did not have anything .infront of it, it is referring to the obj itself
+        Quaternion targetRotation;
+
+        if (rb.velocity.y > 0) //bird is moving up
+        {
+            targetRotation = Quaternion.Euler(0, 0, 30);
         }
+
         else if ((rb.velocity.y < 0)) //bird is moving down 
         {
-            transform.rotation = Quaternion.Euler(0, 0, -30); //make the bird face down 30 degree
+            targetRotation = Quaternion.Euler(0, 0, -30); //make the bird face down 30 degree
         }
-  
+
+        else
+        {
+            targetRotation = Quaternion.Euler(0, 0, 0);
+        }
+        transform.rotation = Quaternion.RotateTowards(rotation, targetRotation, 600 * Time.deltaTime);
     }
 
     private void OnCollisionEnter2D(Collision2D collision) //built in function -- collide
