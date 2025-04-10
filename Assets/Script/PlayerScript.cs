@@ -46,6 +46,12 @@ public class PlayerScript : MonoBehaviour
             Debug.Log("Game Over");
             Time.timeScale = 0; //stop the game
         }
+        else if (collision.gameObject.tag == "Floor")
+        {
+            Debug.Log("Game Over");
+            Time.timeScale = 0; //stop the game
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision) //built in function  -- trigger
