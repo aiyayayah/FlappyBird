@@ -4,10 +4,12 @@ public class Floor : MonoBehaviour
 {
     public float floorMovingSpeed = 2f;
     private Rigidbody2D rb;
+    public GameManager gm;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
         Destroy(gameObject, 30.0f);
 
       
@@ -18,6 +20,9 @@ public class Floor : MonoBehaviour
 
     void Update()
     {
-        rb.velocity = new Vector2(-floorMovingSpeed, 0);
+        if (!gm.PlayerDead == true)
+        {
+            rb.velocity = new Vector2(-floorMovingSpeed, 0);
+        }
     }
 }
