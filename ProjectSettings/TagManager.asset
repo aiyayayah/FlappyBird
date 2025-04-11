@@ -7,6 +7,7 @@ TagManager:
   - Pillar
   - ADDScore
   - Floor
+  - GameManager
   layers:
   - Default
   - TransparentFX

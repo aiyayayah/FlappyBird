@@ -74,10 +74,16 @@ public class PlayerScript : MonoBehaviour
     private void GameEnd()
     {
         gm.PlayerDead = true;
+        Invoke("StopGame", 1.0f); //stop the bird flying
     }
 
     private void FreeBird()
     {
         rb.constraints = RigidbodyConstraints2D.None; 
+    }
+
+    public void StopGame()
+    {
+        Time.timeScale = 0;
     }
 }

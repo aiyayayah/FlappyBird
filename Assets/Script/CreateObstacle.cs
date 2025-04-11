@@ -15,18 +15,22 @@ public class CreateObstacle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(gm.GameStart == true)
+        if (!gm.PlayerDead)
         {
-            if (doCreate)
+            if (gm.GameStart == true)
             {
-                int randomIndex = Random.Range(0, obstacles.Length);
+                if (doCreate)
+                {
+                    int randomIndex = Random.Range(0, obstacles.Length);
 
-                Instantiate(obstacles[randomIndex], spawnPoint.position, spawnPoint.rotation);
+                    Instantiate(obstacles[randomIndex], spawnPoint.position, spawnPoint.rotation);
 
-                Invoke("ResetDoCreate", nextPillarCreationTime); //delay time after nextPillarCreated
-                doCreate = false; //prevent immediate respawn
+                    Invoke("ResetDoCreate", nextPillarCreationTime); //delay time after nextPillarCreated
+                    doCreate = false; //prevent immediate respawn
+                }
             }
         }
+      
         
     }
 
