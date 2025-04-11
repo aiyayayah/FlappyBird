@@ -15,7 +15,10 @@ public class PlayerScript : MonoBehaviour
     public Text scoreTextBest;
     public GameObject[] medals;
     public GameObject scoreBackground;
-    public int scoreMaximum = 0;
+    private int scoreMaximum = 0;
+    public GameObject imageNew;
+    public AudioSource sound;
+    public AudioClip[] soundClips;
 
     private string path = "C:\\FlappyBird Storage\\Score.txt";
   void Start()
@@ -25,11 +28,12 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)) // 0 means mouse's left click
+        if(Input.GetMouseButtonDown(0)) // 0 means mouse's left click
         {
             if(gm.PlayerDead == false)
             {
                 rb.velocity = new Vector2(0, jumpHeight); // 0 speed for x
+                sound.PlayOneShot(soundClips[0]);
             }
         }
 
@@ -84,6 +88,7 @@ public class PlayerScript : MonoBehaviour
     private void GameEnd()
     {
         gm.PlayerDead = true;
+        sound.PlayOneShot(soundClips[1]);
         Invoke("StopGame", 0.8f); //stop the bird flying
     }
 
@@ -99,11 +104,14 @@ public class PlayerScript : MonoBehaviour
         scoreBackground.SetActive(false);
         scoreTextNow.text = score.ToString();
 
+
+
         if (File.Exists(path))
         {
            scoreMaximum =  int.Parse(File.ReadAllText(path));
             if(score > scoreMaximum)
             {
+                imageNew.SetActive(true);
                 scoreMaximum = score;
                 File.WriteAllText(path, score.ToString());
             }
@@ -112,6 +120,7 @@ public class PlayerScript : MonoBehaviour
         {
             File.WriteAllText(path, score.ToString());
             scoreMaximum = score;
+            imageNew.SetActive(true);
         }
 
         if(score >= 15)
