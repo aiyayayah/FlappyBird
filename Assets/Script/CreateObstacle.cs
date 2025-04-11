@@ -5,7 +5,7 @@ public class CreateObstacle : MonoBehaviour
     public GameObject[] obstacles;
     public Transform spawnPoint;
     public bool doCreate = true;
-    public float nextPillarCreationTime = 2.0f;
+    public float nextPillarCreationTime = 1.0f;
     public GameManager gm;
     void Start()
     {
