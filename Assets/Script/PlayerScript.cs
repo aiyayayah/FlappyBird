@@ -8,6 +8,7 @@ public class PlayerScript : MonoBehaviour
     public int score = 0;
 
     public GameManager gm;
+    public GameObject endGameUI;
    void Start()
     {
         
@@ -85,5 +86,6 @@ public class PlayerScript : MonoBehaviour
     public void StopGame()
     {
         Time.timeScale = 0;
+        endGameUI.SetActive(true);
     }
 }
