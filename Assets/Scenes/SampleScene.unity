@@ -454,7 +454,7 @@ MonoBehaviour:
   - {fileID: 7583006288760592029, guid: 8e9d290c485afee449bb691d0e0bdc67, type: 3}
   spawnPoint: {fileID: 889158102}
   doCreate: 1
-  nextPillarCreationTime: 2
+  nextPillarCreationTime: 1
   gm: {fileID: 1051065423}
 --- !u!4 &889158102
 Transform:
@@ -1353,7 +1353,7 @@ Transform:
   m_GameObject: {fileID: 1529898414}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 9.73, y: 0.033, z: 0}
+  m_LocalPosition: {x: 10, y: 0.033, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1372,6 +1372,7 @@ GameObject:
   - component: {fileID: 1610825878}
   - component: {fileID: 1610825877}
   - component: {fileID: 1610825876}
+  - component: {fileID: 1610825880}
   m_Layer: 5
   m_Name: ScoreNumber
   m_TagString: Untagged
@@ -1470,6 +1471,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610825874}
   m_CullTransparentMesh: 1
+--- !u!114 &1610825880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610825874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a377191175047499bfaa1908702830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pScript: {fileID: 1503848755}
+  scoreText: {fileID: 1610825878}
 --- !u!1 &1633094543
 GameObject:
   m_ObjectHideFlags: 0
