@@ -1,5 +1,6 @@
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -9,7 +10,10 @@ public class PlayerScript : MonoBehaviour
 
     public GameManager gm;
     public GameObject endGameUI;
-   void Start()
+    public Text scoreTextNow;
+    public GameObject[] medals;
+    public GameObject scoreBackground;
+  void Start()
     {
         
     }
@@ -87,5 +91,20 @@ public class PlayerScript : MonoBehaviour
     {
         Time.timeScale = 0;
         endGameUI.SetActive(true);
+        scoreBackground.SetActive(false);
+        scoreTextNow.text = score.ToString();
+
+        if(score > 15)
+        {
+            medals[0].SetActive(true);
+        }
+        else if(score>10)
+        {
+            medals[1].SetActive(true);
+        }
+        else
+        {
+            medals[2].SetActive(true);
+        }
     }
 }
