@@ -74,7 +74,7 @@ public class PlayerScript : MonoBehaviour
     private void GameEnd()
     {
         gm.PlayerDead = true;
-        Invoke("StopGame", 1.0f); //stop the bird flying
+        Invoke("StopGame", 0.8f); //stop the bird flying
     }
 
     private void FreeBird()

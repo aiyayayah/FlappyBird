@@ -10,7 +10,7 @@ public class Floor : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         gm = GameObject.FindWithTag("GameManager").GetComponent<GameManager>();
-        Destroy(gameObject, 30.0f);
+        Destroy(gameObject, 60.0f);
 
       
         rb.gravityScale = 0;
