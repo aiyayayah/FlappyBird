@@ -1,6 +1,7 @@
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 using UnityEngine.UI;
+using System.IO;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -10,9 +11,13 @@ public class PlayerScript : MonoBehaviour
 
     public GameManager gm;
     public GameObject endGameUI;
-    public Text scoreTextNow;
+    public Text scoreTextNow; 
+    public Text scoreTextBest;
     public GameObject[] medals;
     public GameObject scoreBackground;
+    public int scoreMaximum = 0;
+
+    private string path = "C:\\FlappyBird Storage\\Score.txt";
   void Start()
     {
         
@@ -94,11 +99,26 @@ public class PlayerScript : MonoBehaviour
         scoreBackground.SetActive(false);
         scoreTextNow.text = score.ToString();
 
-        if(score > 15)
+        if (File.Exists(path))
+        {
+           scoreMaximum =  int.Parse(File.ReadAllText(path));
+            if(score > scoreMaximum)
+            {
+                scoreMaximum = score;
+                File.WriteAllText(path, score.ToString());
+            }
+        }
+        else
+        {
+            File.WriteAllText(path, score.ToString());
+            scoreMaximum = score;
+        }
+
+        if(score >= 15)
         {
             medals[0].SetActive(true);
         }
-        else if(score>10)
+        else if(score >= 10)
         {
             medals[1].SetActive(true);
         }
@@ -106,5 +126,8 @@ public class PlayerScript : MonoBehaviour
         {
             medals[2].SetActive(true);
         }
+        scoreTextBest.text = scoreMaximum.ToString();
     }
+
+
 }
