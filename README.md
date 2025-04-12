@@ -14,14 +14,14 @@ A personal educational project recreating Flappy Bird mechanics in Unity for lea
 
 ##  Demo
 ### 🏠 Main Menu
-<img src="mainmenu.png" width="350" alt="Main Menu Screen">
+<img src="mainmenu.png" width="300" alt="Main Menu Screen">
 
 - Start game button
 - Best score display
 - Settings panel
 
 ### 🎮 In-Game
-<img src="ingame.png" width="350" alt="Gameplay Screen">
+<img src="ingame.png" width="300" alt="Gameplay Screen">
 
 - Click-to-flap controls
 - Infinite procedural pipes
@@ -29,7 +29,7 @@ A personal educational project recreating Flappy Bird mechanics in Unity for lea
 - Flap particles
 
 ### 🏁 Game Over
-<img src="gameover.png" width="350" alt="Game Over Screen">
+<img src="gameover.png" width="300" alt="Game Over Screen">
 
 - Final score display
 - Medal system (bronze/silver/gold)
