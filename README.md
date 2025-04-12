@@ -13,6 +13,12 @@ A personal educational project recreating Flappy Bird mechanics in Unity for lea
 - ✅ Understand collision detection
 - ✅ Create a complete game loop
 
+## Key Features
+- Pillar Generation System
+- Looping Ground Animation
+- 3-Tier Medal Reward System
+- Score Saving System
+  
 ## Installation
 1. Requires Unity 2021.3 or later
 2. Clone repository:
