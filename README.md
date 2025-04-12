@@ -7,11 +7,11 @@ A personal educational project recreating Flappy Bird mechanics in Unity for lea
 
 
 ## Project Goals
-- ✅ Learn Unity 2D physics
-- ✅ Implement game state management
-- ✅ Practice object pooling techniques
-- ✅ Understand collision detection
-- ✅ Create a complete game loop
+- Learn Unity 2D physics
+- Implement game state management
+- Practice object pooling techniques
+- Understand collision detection
+- Create a complete game loop
 
 ## Key Features
 - Pillar Generation System
