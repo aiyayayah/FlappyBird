@@ -20,7 +20,7 @@ A personal educational project recreating Flappy Bird mechanics in Unity for lea
 - Score Saving System
   
 ## Installation
-1. Requires Unity 2021.3 or later
+1. Requires Unitor Editor Version 6000.0.10f1 or later
 2. Clone repository:
    ```bash
    git clone https://github.com/aiyayayah/FlappyBird.git
