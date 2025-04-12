@@ -16,15 +16,14 @@ A personal educational project recreating Flappy Bird mechanics in Unity for lea
 ### 🏠 Main Menu
 <img src="mainmenu.png" width="300" alt="Main Menu Screen">
 
-- Start game button
-- Best score display
-- Settings panel
+- Tap the page to start game using left mouse click
+
 
 ### 🎮 In-Game
 <img src="ingame.png" width="300" alt="Gameplay Screen">
 
 - Click-to-flap controls
-- Infinite procedural pipes
+- Infinite procedural pipes and floors
 - Real-time score
 - Flap particles
 
