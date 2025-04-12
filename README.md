@@ -20,7 +20,6 @@ A personal educational project recreating Flappy Bird mechanics in Unity for lea
 - Best score display
 - Settings panel
 
----
 
 ### 🎮 In-Game
 <img src="ingame.png" width="400" alt="Gameplay Screen">
@@ -29,8 +28,6 @@ A personal educational project recreating Flappy Bird mechanics in Unity for lea
 - Real-time score
 - Flap particles
 
----
-
 ### 🏁 Game Over
 <img src="gameover.png" width="400" alt="Game Over Screen">
 - Final score display
@@ -38,7 +35,6 @@ A personal educational project recreating Flappy Bird mechanics in Unity for lea
 - Restart button
 - New best indicator
 
----
 
 
 ## Key Features
