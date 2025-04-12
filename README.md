@@ -13,23 +13,21 @@ A personal educational project recreating Flappy Bird mechanics in Unity for lea
 - Create a complete game loop
 
 ## 🕹️ Demo
-
 ### 🏠 Main Menu
-<img src="mainmenu.png" width="400" alt="Main Menu Screen">
+<img src="mainmenu.png" width="350" alt="Main Menu Screen">
 - Start game button
 - Best score display
 - Settings panel
 
-
 ### 🎮 In-Game
-<img src="ingame.png" width="400" alt="Gameplay Screen">
+<img src="ingame.png" width="350" alt="Gameplay Screen">
 - Click-to-flap controls
 - Infinite procedural pipes
 - Real-time score
 - Flap particles
 
 ### 🏁 Game Over
-<img src="gameover.png" width="400" alt="Game Over Screen">
+<img src="gameover.png" width="350" alt="Game Over Screen">
 - Final score display
 - Medal system (bronze/silver/gold)
 - Restart button
