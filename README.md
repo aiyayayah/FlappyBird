@@ -12,15 +12,17 @@ A personal educational project recreating Flappy Bird mechanics in Unity for lea
 - Understand collision detection
 - Create a complete game loop
 
-## 🕹️ Demo
+##  Demo
 ### 🏠 Main Menu
 <img src="mainmenu.png" width="350" alt="Main Menu Screen">
+
 - Start game button
 - Best score display
 - Settings panel
 
 ### 🎮 In-Game
 <img src="ingame.png" width="350" alt="Gameplay Screen">
+
 - Click-to-flap controls
 - Infinite procedural pipes
 - Real-time score
@@ -28,18 +30,12 @@ A personal educational project recreating Flappy Bird mechanics in Unity for lea
 
 ### 🏁 Game Over
 <img src="gameover.png" width="350" alt="Game Over Screen">
+
 - Final score display
 - Medal system (bronze/silver/gold)
 - Restart button
 - New best indicator
 
-
-
-## Key Features
-- Pillar Generation System
-- Looping Ground Animation
-- 3-Tier Medal Reward System
-- Score Saving System
   
 ## Installation
 1. Requires Unitor Editor Version 6000.0.10f1 or later
