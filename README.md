@@ -12,11 +12,15 @@ A personal educational project recreating Flappy Bird mechanics in Unity for lea
 - Understand collision detection
 - Create a complete game loop
 
+
+## How to Play
+- **Left Mouse Click** – Flap
+   
 ##  Demo
 ### 🏠 Main Menu
 <img src="mainmenu.png" width="300" alt="Main Menu Screen">
 
-- Tap the page to start game using left mouse click
+
 
 
 ### 🎮 In-Game
